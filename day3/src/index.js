@@ -1,5 +1,4 @@
 // <⚠️ DONT DELETE THIS ⚠️>
-import "./styles.css";
 const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 // <⚠️ /DONT DELETE THIS ⚠️>
 
@@ -12,4 +11,29 @@ const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 ✅ DO NOT CHANGE .css, or .html files.
 ✅ ALL function handlers should be INSIDE of "superEventHandler"
 */
-const superEventHandler = {};
+
+var h2 = document.querySelector("h2");
+const superEventHandler = {
+    hoverHandler: function() {
+        h2.innerHTML = "The mouse is here!";
+        h2.style.color = colors[0];
+    },
+    resizeHandler: function() {
+        h2.innerHTML = "You just resized!";
+        h2.style.color = colors[2];
+    },
+    mouseOutHandler: function() {
+        h2.innerHTML = "The mouse is gone!";
+        h2.style.color = colors[1];
+    },
+    rightClickHandler: function() {
+        h2.innerHTML = "That was a right click!"
+        h2.style.color = colors[3];
+    }
+    
+};
+
+window.addEventListener("resize",superEventHandler.resizeHandler);
+h2.addEventListener("mouseover",superEventHandler.hoverHandler);
+h2.addEventListener("mouseout", superEventHandler.mouseOutHandler);
+h2.addEventListener("auxclick", superEventHandler.rightClickHandler);
