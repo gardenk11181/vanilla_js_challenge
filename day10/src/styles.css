@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inputContainer input {
+    margin-left: 20px;
+    width:50px;
+}
+
+.inputContainer .btnPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: beige;
+    font-size: 15px;
+    padding:0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
