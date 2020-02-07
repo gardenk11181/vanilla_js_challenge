@@ -1,4 +1,67 @@
+@import "reset.css";
+
 body {
     font-family: sans-serif;
-  }
-  
+}
+
+.row {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.numShow {
+    width: 420px;
+    height:60px;
+    font-size: 25px;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.initial {
+    width:120px;
+    height:60px;
+    background-color: grey;
+}
+
+.num {
+    width:120px;
+    height:60px;
+    background-color: grey;
+}
+
+.number0 {
+    width:270px;
+}
+
+.equals {
+    width:120px;
+    height:60px;
+    background-color: grey;
+}
+
+.calc{
+    width:120px;
+    height:60px;
+    background-color: orange;
+}
+
+.table {
+    padding-top: 20px;
+    width: 600px;
+    height:500px;
+    background-color: black;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 25px;
+    border-radius: 10px;
+}
