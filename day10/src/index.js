@@ -14,10 +14,10 @@ function init(){
     btnPlay.addEventListener('click',function(){
         var random = Math.floor(Math.random()*slider.value+1);
         result.innerText = "Your chose: "+inputNumber.value+", the machine chose: "+random;
-        if(slider.value===random) {
-            winner.innerText = "You won!"
+        if(inputNumber.value===random.toString()) {
+            winner.innerText = "You won!";
         } else{
-            winner.innerText = "You lost!"
+            winner.innerText = "You lost!";
         }
     })
 

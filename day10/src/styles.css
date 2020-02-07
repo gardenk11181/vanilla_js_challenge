@@ -25,3 +25,7 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.winner{
+    font-weight: 700;
+}
